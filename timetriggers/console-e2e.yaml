@@ -1,0 +1,14 @@
+apiVersion: fission.io/v1
+kind: TimeTrigger
+metadata:
+  name: console-e2e
+  namespace: fission
+  labels:
+    fission-console.io/source: Github
+spec:
+  cron: "@every 12h"
+  functionref:
+    name: quote
+    type: name
+  method: POST
+  subpath: /
