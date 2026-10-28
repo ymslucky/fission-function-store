@@ -6,7 +6,7 @@ metadata:
   labels:
     fission-console.io/source: Github
 spec:
-  cron: "@every 12h"
+  cron: "@every 6h"
   functionref:
     name: quote
     type: name
